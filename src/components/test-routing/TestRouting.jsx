@@ -4,6 +4,7 @@ import DashBoard from './children/DashBoard';
 import Home from './children/Home';
 import About from './children/About';
 import Error from './children/Error';
+import Navbar from './children/Navbar';
 
 class TestRouting extends React.Component {
 
@@ -11,7 +12,9 @@ class TestRouting extends React.Component {
         return(
             <>
                 <BrowserRouter>
+                <Navbar/>
                     <Switch>
+                    
                         <Route exact path='/' component={Home} />
                         <Route path='/dashboard' component={DashBoard}/>
                         <Route path='/about' component={About} />
