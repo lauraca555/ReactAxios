@@ -20,7 +20,7 @@ class TestAxios extends React.Component{
                 console.log(error);
             })*/
         
-            const user = {
+            /*const user = {
                 name : 'toto'
             }
 
@@ -30,10 +30,16 @@ class TestAxios extends React.Component{
                     })
                     .catch((error) => {
                         console.log(error);
-                    })   
+                    })*/
+                    
+                    this.getJoke();
+                    
+                }
+                getJoke  = async () => {
+                    const response = await Axios.get("http://api.icndb.com/jokes/random");
+                    this.setState({value : response.data.value, isLoaded:true });
 
-
-        }
+                }       
 
 
     render (){
