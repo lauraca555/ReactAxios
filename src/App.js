@@ -1,5 +1,6 @@
 import React from 'react';
-import TestAxios from './components/test-axios/TestAxios';
+import TestAxios from './components/test-axios/TestAxios2';
+
 
 
 class App extends React.Component{
