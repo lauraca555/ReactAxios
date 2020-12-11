@@ -1,5 +1,5 @@
 import React from 'react';
-import TestAxios from './components/test-axios/TestAxios2';
+import TestRouting from './components/test-routing/TestRouting';
 
 
 
@@ -8,7 +8,8 @@ class App extends React.Component{
   render(){
 
     return(
-      <TestAxios/>
+      
+      <TestRouting/>
     )
   }
 }

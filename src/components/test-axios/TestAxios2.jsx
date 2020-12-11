@@ -1,5 +1,5 @@
 import React from 'react';
-import apiMovie from '../../api/apiMovie';
+import apiMovie from '../../api/apiMovie2';
 
 
 class TestAxios extends React.Component {
