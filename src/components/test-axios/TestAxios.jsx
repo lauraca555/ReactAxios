@@ -1,4 +1,5 @@
 import React from 'react'; 
+import Axios from 'axios';
 
 class TestAxios extends React.Component{
 
@@ -7,6 +8,10 @@ class TestAxios extends React.Component{
         this.state = {
             isLoaded : false
         }
+    }
+
+    componentDidMount() {
+        Axios.get("http://api.icndb.com/jokes/random");
     }
 
     render (){
