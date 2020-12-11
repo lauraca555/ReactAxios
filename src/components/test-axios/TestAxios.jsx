@@ -15,7 +15,10 @@ class TestAxios extends React.Component{
         Axios.get("http://api.icndb.com/jokes/random")
             .then((response) => {
                 this.setState({value : response.data.value, isLoaded:true });
-            });
+            })
+            .catch((error) => {
+                console.log(error);
+            })
     }
 
     render (){
