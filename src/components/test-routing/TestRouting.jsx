@@ -1,10 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import DashBoard from './children/DashBoard';
-import Home from './children/Home';
-import About from './children/About';
-import Error from './children/Error';
+import { BrowserRouter} from 'react-router-dom';
+
 import Navbar from './children/Navbar';
+import Routes from './Routes';
 
 class TestRouting extends React.Component {
 
@@ -12,15 +10,8 @@ class TestRouting extends React.Component {
         return(
             <>
                 <BrowserRouter>
-                <Navbar/>
-                    <Switch>
-                    
-                        <Route exact path='/' component={Home} />
-                        <Route path='/dashboard' component={DashBoard}/>
-                        <Route path='/about' component={About} />
-                        <Route component={Error} />
-                    </Switch>
-
+                    <Navbar/>
+                    <Routes/>  
                 </BrowserRouter>
             </>
         )
